@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320" role="img" aria-label="Burger artesanal">
+  <defs>
+    <linearGradient id="bun" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f8c27a" />
+      <stop offset="100%" stop-color="#e5943e" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="320" fill="#fff4e6" />
+  <ellipse cx="240" cy="120" rx="150" ry="60" fill="url(#bun)" />
+  <rect x="90" y="150" width="300" height="28" rx="14" fill="#8b4b2b" />
+  <rect x="90" y="178" width="300" height="20" rx="10" fill="#f4d35e" />
+  <rect x="110" y="198" width="260" height="26" rx="13" fill="#4caf50" />
+  <ellipse cx="240" cy="238" rx="150" ry="50" fill="url(#bun)" />
+  <circle cx="180" cy="100" r="6" fill="#fff" opacity="0.6" />
+  <circle cx="220" cy="92" r="6" fill="#fff" opacity="0.6" />
+  <circle cx="260" cy="102" r="6" fill="#fff" opacity="0.6" />
+</svg>

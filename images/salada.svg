@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320" role="img" aria-label="Salada tropical">
+  <rect width="480" height="320" fill="#e9fff2" />
+  <circle cx="240" cy="190" r="110" fill="#b7efc5" />
+  <circle cx="200" cy="170" r="70" fill="#78c850" />
+  <circle cx="290" cy="170" r="70" fill="#5fbf66" />
+  <circle cx="180" cy="210" r="40" fill="#f4a259" />
+  <circle cx="300" cy="210" r="36" fill="#f25f5c" />
+  <circle cx="240" cy="140" r="28" fill="#fcca46" />
+  <ellipse cx="240" cy="230" rx="130" ry="50" fill="#4d8b56" opacity="0.2" />
+</svg>

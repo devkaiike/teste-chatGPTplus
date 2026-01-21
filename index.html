@@ -3,60 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu da Lanchonete</title>
-    <link rel="stylesheet" href="/src/styles.css" />
+    codex/add-item-images-and-chef-view
+    <title>Pedidos da Lanchonete</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="app">
-      <header class="hero">
-        <div class="hero__content">
-          <p class="hero__tag">Aberto hoje até 23h</p>
-          <h1>Menu da Lanchonete</h1>
-          <p class="hero__subtitle">
-            Combos caprichados, sanduíches artesanais e bebidas geladas. Monte seu
-            pedido com rapidez e sabor.
-          </p>
-          <div class="hero__actions">
-            <button class="button button--primary">Pedir agora</button>
-            <button class="button button--ghost">Ver promoções</button>
-          </div>
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">Dashboard de pedidos</p>
+        <h1>Lanchonete Aurora</h1>
+        <p class="subtitle">Selecione itens com imagem e acompanhe a visão do cozinheiro.</p>
+      </div>
+      <div class="status-pill">
+        <span class="pulse"></span>
+        Cozinha online
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="panel" aria-labelledby="menu-title">
+        <div class="panel-header">
+          <h2 id="menu-title">Menu do cliente</h2>
+          <p>Todos os itens possuem imagem para facilitar a escolha.</p>
         </div>
-        <div class="hero__panel">
-          <div class="hero__badge">
-            <span class="hero__badge-title">Combo da casa</span>
-            <span class="hero__badge-price">R$ 32,90</span>
-            <span class="hero__badge-desc">Burger + fritas + refri</span>
-          </div>
-          <div class="hero__stats">
-            <div>
-              <strong>12 min</strong>
-              <span>Tempo médio</span>
-            </div>
-            <div>
-              <strong>4.8 ★</strong>
-              <span>Mais pedidos</span>
-            </div>
-          </div>
+        <div id="menu" class="menu-grid" role="list"></div>
+      </section>
+
+      <section class="panel" aria-labelledby="kitchen-title">
+        <div class="panel-header">
+          <h2 id="kitchen-title">Visão do cozinheiro</h2>
+          <p>Pedidos recebidos em tempo real.</p>
         </div>
-      </header>
+        <div class="kitchen-controls">
+          <label for="customer-name">Nome do cliente</label>
+          <input id="customer-name" type="text" placeholder="Ex: Camila" />
+          <button id="send-random" type="button">Enviar pedido aleatório</button>
+        </div>
+        <div id="orders" class="orders"></div>
+      </section>
+    </main>
 
-      <main>
-        <section class="filters">
-          <div class="filters__search">
-            <input id="search" type="text" placeholder="Busque por burger, batata, suco..." />
-          </div>
-          <div class="filters__tags" id="tag-filters"></div>
-        </section>
+    <template id="order-template">
+      <article class="order-card">
+        <header>
+          <h3 class="order-title"></h3>
+          <span class="order-status"></span>
+        </header>
+        <p class="order-items"></p>
+        <footer>
+          <span class="order-time"></span>
+          <button class="mark-ready" type="button">Marcar pronto</button>
+        </footer>
+      </article>
+    </template>
 
-        <section class="menu" id="menu"></section>
-      </main>
-
-      <footer class="footer">
-        <p>Rua da Alegria, 123 • Centro • Delivery via app próprio</p>
-        <button class="button button--secondary">Chamar no WhatsApp</button>
-      </footer>
-    </div>
-
-    <script type="module" src="/src/main.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

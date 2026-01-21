@@ -1,15 +1,10 @@
 {
-  "name": "menu-lanchonete",
+  "name": "lanchonete-aurora",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "description": "Menu com imagens e visão do cozinheiro.",
+  "main": "server.js",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview --port 4173"
-  },
-  "devDependencies": {
-    "typescript": "^5.2.2",
-    "vite": "^5.0.0"
+    "start": "node server.js"
   }
 }
