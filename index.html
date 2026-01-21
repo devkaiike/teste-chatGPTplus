@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedidos da Lanchonete</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">Dashboard de pedidos</p>
+        <h1>Lanchonete Aurora</h1>
+        <p class="subtitle">Selecione itens com imagem e acompanhe a visão do cozinheiro.</p>
+      </div>
+      <div class="status-pill">
+        <span class="pulse"></span>
+        Cozinha online
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="panel" aria-labelledby="menu-title">
+        <div class="panel-header">
+          <h2 id="menu-title">Menu do cliente</h2>
+          <p>Todos os itens possuem imagem para facilitar a escolha.</p>
+        </div>
+        <div id="menu" class="menu-grid" role="list"></div>
+      </section>
+
+      <section class="panel" aria-labelledby="kitchen-title">
+        <div class="panel-header">
+          <h2 id="kitchen-title">Visão do cozinheiro</h2>
+          <p>Pedidos recebidos em tempo real.</p>
+        </div>
+        <div class="kitchen-controls">
+          <label for="customer-name">Nome do cliente</label>
+          <input id="customer-name" type="text" placeholder="Ex: Camila" />
+          <button id="send-random" type="button">Enviar pedido aleatório</button>
+        </div>
+        <div id="orders" class="orders"></div>
+      </section>
+    </main>
+
+    <template id="order-template">
+      <article class="order-card">
+        <header>
+          <h3 class="order-title"></h3>
+          <span class="order-status"></span>
+        </header>
+        <p class="order-items"></p>
+        <footer>
+          <span class="order-time"></span>
+          <button class="mark-ready" type="button">Marcar pronto</button>
+        </footer>
+      </article>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>

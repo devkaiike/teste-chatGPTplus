@@ -1,0 +1,10 @@
+{
+  "name": "lanchonete-aurora",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Menu com imagens e visão do cozinheiro.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320" role="img" aria-label="Sobremesa lunar">
+  <rect width="480" height="320" fill="#f7f0ff" />
+  <ellipse cx="240" cy="220" rx="150" ry="60" fill="#bdb2ff" />
+  <rect x="140" y="120" width="200" height="120" rx="60" fill="#6d597a" />
+  <circle cx="190" cy="160" r="26" fill="#f28482" />
+  <circle cx="240" cy="150" r="26" fill="#f7d1cd" />
+  <circle cx="290" cy="165" r="26" fill="#f28482" />
+  <rect x="200" y="90" width="80" height="40" rx="20" fill="#f9c74f" />
+</svg>
