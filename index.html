@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu da Lanchonete</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="hero">
+        <div class="hero__content">
+          <p class="hero__tag">Aberto hoje até 23h</p>
+          <h1>Menu da Lanchonete</h1>
+          <p class="hero__subtitle">
+            Combos caprichados, sanduíches artesanais e bebidas geladas. Monte seu
+            pedido com rapidez e sabor.
+          </p>
+          <div class="hero__actions">
+            <button class="button button--primary">Pedir agora</button>
+            <button class="button button--ghost">Ver promoções</button>
+          </div>
+        </div>
+        <div class="hero__panel">
+          <div class="hero__badge">
+            <span class="hero__badge-title">Combo da casa</span>
+            <span class="hero__badge-price">R$ 32,90</span>
+            <span class="hero__badge-desc">Burger + fritas + refri</span>
+          </div>
+          <div class="hero__stats">
+            <div>
+              <strong>12 min</strong>
+              <span>Tempo médio</span>
+            </div>
+            <div>
+              <strong>4.8 ★</strong>
+              <span>Mais pedidos</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="filters">
+          <div class="filters__search">
+            <input id="search" type="text" placeholder="Busque por burger, batata, suco..." />
+          </div>
+          <div class="filters__tags" id="tag-filters"></div>
+        </section>
+
+        <section class="menu" id="menu"></section>
+      </main>
+
+      <footer class="footer">
+        <p>Rua da Alegria, 123 • Centro • Delivery via app próprio</p>
+        <button class="button button--secondary">Chamar no WhatsApp</button>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
